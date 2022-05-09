@@ -1,0 +1,117 @@
+//Общие стили-------------------------------------------------------------------------------------------------------------------------------------
+*{
+   li{
+      list-style: none; 
+      padding: 0; 
+      margin: 0;
+   }
+   a{
+      color: #000000; 
+      padding: 0; 
+      margin: 0;
+   }
+   ul{
+      padding:  0;
+      margin: 0;
+   }
+}
+
+//Переменные---------------------------------------------------------------------------------------------------------------------------
+$maxWidth: 1600px;
+$minWidth: 320px;
+$maxWidthContainer: 1134px;
+$md1: 1146px;
+$md2: 992px;
+$md3: 768px;
+$md4: 480px;
+//Миксины------------------------------------------------------------------------------------------------------------------------------
+@mixin tplbutton ($c, $bc){
+   color: $c;
+   background-color: $bc;
+   font-weight: 600;
+   font-size: 16px;
+   border: none;
+   box-shadow: 5px 5px .7 black;
+   padding: 15px 50px;
+   border-radius: 5px;
+   font-family: $fontFamily;
+   &:hover{
+      transition: ease .45s;
+      color: $bc;
+      background-color: $c;
+       
+      padding: 15px 50px;
+   }
+}
+//Оболочка-----------------------------------------------------------------------------------------------------------------------------
+.wrapper{
+   width: 100%;
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+//Основная сетка-----------------------------------------------------------------------------------------------------------------------
+._container{
+   max-width: $maxWidthContainer;
+   margin: 0 auto;
+
+   @media (max-width: $md1)
+   {
+      padding: 0 20px;
+   }
+
+   @media (max-width: $md2)
+   {
+      padding: 0 15px;
+   }
+
+   @media (max-width: $md3)
+   {   
+      padding: 0 10px;
+   }
+   @media (max-width: $md4)
+   {   
+      padding: 0 10px;
+   }
+}
+//Шрифт по умолчанию--------------------------------------------------------------------------------------------------------------------
+$fontFamily: "Lato", sans-serif;
+body{
+   font-family: $fontFamily;
+   background-color: #3E3457;
+}
+//-------Заголовки----------------------------------------------------------------------------------------------------------------------
+h1{
+   font-weight: 800;
+   font-size: 75px;
+   line-height: 93.75px;
+   margin: 0;
+   color: #ffffff;
+}
+h2{
+   font-weight: 700;
+   font-size: 39px;
+   line-height: 50.7px;
+   margin: 0;
+   color: #ffffff;
+}
+h3{
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 26px;
+   color: #ffffff;
+}
+h4{
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 19px;
+}
+//----Текст-----------------------------------------------------------------------------------------------------------------------------
+._description{
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 150%;
+   color: rgba($color: #ffffff, $alpha: .6);
+}
+//-------------------------------------------------------------------------------------------------------------------------------------
