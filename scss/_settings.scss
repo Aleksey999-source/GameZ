@@ -64,7 +64,7 @@ $md4: 480px;
 
    @media (max-width: $md2)
    {
-      padding: 0 15px;
+      padding: 0 10px;
    }
 
    @media (max-width: $md3)
@@ -105,11 +105,13 @@ h3{
    font-size: 20px;
    line-height: 26px;
    color: #ffffff;
+   margin: 0;
 }
 h4{
    font-weight: 600;
    font-size: 16px;
    line-height: 19px;
+   margin: 0px 0px 0px 0px;
 }
 //----Текст-----------------------------------------------------------------------------------------------------------------------------
 ._description{
