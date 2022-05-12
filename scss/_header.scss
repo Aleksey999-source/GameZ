@@ -16,21 +16,27 @@
    }
 }
 .header {
-   margin: 30px 0 0 0;
+   position: absolute;
+   width: 100%;
+   left: 0;
+   top: 0;
+   z-index: 50;
+   
+   margin: 30px 0px 0px 0px;
    &__container {
       width: 100%;
       .header__menu{
-         height: 70px;
+         height: fit-content;
          display: flex;
          justify-content: space-between;
          align-items: center;
+         padding: 10px 0px;
          
          .menu__logo{
             display: flex;
             align-items: center;
             
             .header__logo{
-               margin: 0 10px 0 0;
                width: 67px;
                height: 67px;
             }
@@ -44,12 +50,17 @@
             font-size: 30px;
          }
          .menu__body{
+            width: 900px;
             .menu__nav{
                display: flex;
                align-items: center;
+               justify-content: center;
                flex-wrap: wrap;
+               gap: 10px;
+               padding: 0px 10px 0px 10px;
                .nav__item{
-                  margin: 0 40px 0 0;
+                  text-align: center;
+                  width: 170px;
                   color: rgba($color: #fff, $alpha: .6);
                   cursor: pointer;
                   font-weight: 400;
@@ -57,6 +68,11 @@
                   &:hover{
                      transition: .3s ease all;
                      color: rgba($color: #fff, $alpha: 1.0);
+                  }
+
+                  &:focus, &:active{
+                     font-size: 22px;
+                     margin: 0px 20px;
                   }
                   @media (max-width: $md3){
                      font-size: 22px;
@@ -177,7 +193,7 @@
    }
 }
 
-//----------------------------медиа-------------------------------------
+//----------------------------медиазапросы------------------------------------------------------------------------------------------------------
 @media (max-width: $md4){
    .menu__body{
       display: none;

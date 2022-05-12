@@ -73,6 +73,12 @@ h1 {
   color: #ffffff;
 }
 
+@media (max-width: 480px) {
+  h1 {
+    font-size: 67px;
+  }
+}
+
 h2 {
   font-weight: 700;
   font-size: 39px;
@@ -95,14 +101,26 @@ h4 {
 }
 
 ._description {
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media (max-width: 480px) {
+  ._description {
+    font-size: 18px;
+  }
+}
+
 .header {
-  margin: 30px 0 0 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  margin: 30px 0px 0px 0px;
 }
 
 .header__container {
@@ -110,7 +128,9 @@ h4 {
 }
 
 .header__container .header__menu {
-  height: 70px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,6 +140,7 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px 0px;
 }
 
 .header__container .header__menu .menu__logo {
@@ -132,7 +153,6 @@ h4 {
 }
 
 .header__container .header__menu .menu__logo .header__logo {
-  margin: 0 10px 0 0;
   width: 67px;
   height: 67px;
 }
@@ -145,6 +165,10 @@ h4 {
   font-size: 30px;
 }
 
+.header__container .header__menu .menu__body {
+  width: 900px;
+}
+
 .header__container .header__menu .menu__body .menu__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,12 +176,18 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 10px;
+  padding: 0px 10px 0px 10px;
 }
 
 .header__container .header__menu .menu__body .menu__nav .nav__item {
-  margin: 0 40px 0 0;
+  text-align: center;
+  width: 170px;
   color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
   font-weight: 400;
@@ -168,6 +198,11 @@ h4 {
   -webkit-transition: .3s ease all;
   transition: .3s ease all;
   color: white;
+}
+
+.header__container .header__menu .menu__body .menu__nav .nav__item:focus, .header__container .header__menu .menu__body .menu__nav .nav__item:active {
+  font-size: 22px;
+  margin: 0px 20px;
 }
 
 @media (max-width: 768px) {
@@ -399,6 +434,12 @@ h1 {
   color: #ffffff;
 }
 
+@media (max-width: 480px) {
+  h1 {
+    font-size: 67px;
+  }
+}
+
 h2 {
   font-weight: 700;
   font-size: 39px;
@@ -421,10 +462,148 @@ h4 {
 }
 
 ._description {
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 480px) {
+  ._description {
+    font-size: 18px;
+  }
+}
+
+.page__promo .promo__container {
+  min-height: 850px;
+}
+
+.page__promo .promo__container .promo__body {
+  padding: 269px 0px 157px 0px;
+  max-width: 581px;
+}
+
+.page__promo .promo__container .promo__body .promo__label {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #4EA4DC;
+}
+
+.page__promo .promo__container .promo__body .promo__title {
+  line-height: 125%;
+}
+
+.page__promo .promo__container .promo__body .promo__text {
+  line-height: 160%;
+}
+
+.page__promo .promo__container .promo__body .promo__text span {
+  border-bottom: 1px #fff 5px;
+  color: white;
+  font-size: 18;
+  font-weight: 700;
+}
+
+.page__promo .promo__container .promo__body .promo__text span:hover {
+  -webkit-transition: .3s ease-in all;
+  transition: .3s ease-in all;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.page__promo .promo__container .promo__body .promo__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 10px;
+}
+
+.page__promo .promo__container .promo__body .promo__buttons .promo__button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 53px;
+  color: #4EA4DC;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  -webkit-box-shadow: 5px 5px .7 black;
+          box-shadow: 5px 5px .7 black;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+}
+
+.page__promo .promo__container .promo__body .promo__buttons .promo__button:hover {
+  -webkit-transition: ease .45s;
+  transition: ease .45s;
+  color: #fff;
+  background-color: #4EA4DC;
+}
+
+.page__promo .promo__container .promo__body .promo__buttons .promo__button--transparent {
+  background-color: transparent;
+  border: 1px solid;
+}
+
+@media (max-width: 480px) {
+  .page__promo .promo__container .promo__body .promo__buttons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .page__promo .promo__container .promo__body .promo__buttons .promo__button {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+}
+
+.page__promo .promo__container .promo__body > *:not(:last-child):not(:first-child) {
+  margin: 0px 0px 40px 0px;
+}
+
+._background-image {
+  background: url("../images/hero_area_image.png"), url("../images/background2.png"), url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80% 50%;
+}
+
+@media (max-width: 768px) {
+  ._background-image:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+  }
+  .promo__body {
+    position: relative;
+    z-index: 3;
+  }
+  .page__promo {
+    position: relative;
+  }
 }
 
 * li {
@@ -499,6 +678,12 @@ h1 {
   color: #ffffff;
 }
 
+@media (max-width: 480px) {
+  h1 {
+    font-size: 67px;
+  }
+}
+
 h2 {
   font-weight: 700;
   font-size: 39px;
@@ -521,10 +706,17 @@ h4 {
 }
 
 ._description {
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 480px) {
+  ._description {
+    font-size: 18px;
+  }
 }
 
 * li {
@@ -599,6 +791,12 @@ h1 {
   color: #ffffff;
 }
 
+@media (max-width: 480px) {
+  h1 {
+    font-size: 67px;
+  }
+}
+
 h2 {
   font-weight: 700;
   font-size: 39px;
@@ -621,8 +819,15 @@ h4 {
 }
 
 ._description {
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 480px) {
+  ._description {
+    font-size: 18px;
+  }
 }
