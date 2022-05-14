@@ -832,6 +832,13 @@ h4 {
   height: 100%;
 }
 
+.example .example__container .example__image img:hover {
+  border-radius: 15px;
+  max-width: 110%;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
 .example .example__container .example__body {
   max-width: 550px;
   min-height: 465px;
@@ -899,13 +906,203 @@ h4 {
     padding: 50px 0px 50px 0px;
   }
   .example .example__container .example__image {
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 40px 0px;
+  }
+  .example .example__container .example__body {
+    max-width: 100%;
   }
 }
 
 @media (max-width: 480px) {
   .example .example__container .example__body .example__button button {
     width: 100%;
+  }
+}
+
+.page__experience {
+  background-color: #3B3253;
+  min-height: 715px;
+}
+
+.page__experience .experience__container {
+  background-color: #3B3253;
+  height: 100%;
+  width: 100%;
+  padding: 45px 10px 45px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page__experience .experience__container .experience__body {
+  max-width: 365px;
+  margin: 0px 90px 0px 0px;
+}
+
+.page__experience .experience__container .experience__body .experience__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page__experience .experience__container .experience__body .experience__label .exp__label {
+  margin: 0px 10px 0px 0px;
+}
+
+.page__experience .experience__container .experience__body .experience__text {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.page__experience .experience__container .experience__body .experience__text span {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.page__experience .experience__container .experience__body .experience__text span:hover {
+  -webkit-transition: .4s all ease-in;
+  transition: .4s all ease-in;
+  font-size: 22px;
+  color: white;
+}
+
+.page__experience .experience__container .experience__body .experience__example-images {
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0px 10px;
+}
+
+.page__experience .experience__container .experience__body .experience__example-images > *:hover {
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  -webkit-box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.3);
+}
+
+.page__experience .experience__container .experience__body .experience__example-images > * {
+  border-radius: 10px;
+}
+
+.page__experience .experience__container .experience__body .experience__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0px 10px;
+}
+
+.page__experience .experience__container .experience__body .experience__buttons button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 53px;
+  color: #fff;
+  background-color: #4EA4DC;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  -webkit-box-shadow: 5px 5px .7 black;
+          box-shadow: 5px 5px .7 black;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.page__experience .experience__container .experience__body .experience__buttons button:hover {
+  -webkit-transition: ease .45s;
+  transition: ease .45s;
+  color: #4EA4DC;
+  background-color: #fff;
+}
+
+.page__experience .experience__container .experience__body .experience__buttons .experience__button2 {
+  color: #4EA4DC;
+  background-color: transparent;
+  border: 1px solid #4EA4DC;
+}
+
+.page__experience .experience__container .experience__body > *:not(:last-child) {
+  margin: 0px 0px 40px 0px;
+}
+
+.page__experience .experience__container .experience__image img {
+  max-width: 100%;
+}
+
+.page__experience .experience__container .experience__image img:hover {
+  border-radius: 15px;
+  max-width: 110%;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  -webkit-box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1146px) {
+  .page__experience .experience__container {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    width: 100%;
+  }
+  .page__experience .experience__container .experience__body {
+    max-width: 100%;
+    margin: 0px 0px 0px 0px;
+  }
+  .page__experience .experience__container .experience__body .experience__example-images {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .page__experience .experience__container .experience__body .experience__example-images img {
+    max-width: 100%;
+  }
+  .page__experience .experience__container .experience__body .experience__buttons gir
+button {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 150px;
+            flex: 0 1 150px;
+  }
+  .page__experience .experience__container .experience__image {
+    margin: 0px 0px 40px 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page__experience .experience__container .experience__body .experience__example-images {
+    display: none;
+  }
+  .page__experience .experience__container .experience__body .experience__buttons button {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
   }
 }
 
