@@ -39,6 +39,7 @@
                .promo__button {
                   flex: 0 1 50%;
                   @include tplbutton (#4EA4DC ,#fff);
+
                }
                .promo__button--transparent {
                   background-color: transparent;
@@ -177,3 +178,91 @@
    background-size: cover;
    background-position: center;
 }
+//------------------------------------------Example Section---------------------------------------------------------------------------------
+   .example{
+      border-radius: 0px 401px 401px 345.5px;
+      background-color: #3f3856;
+      padding: 0px 120px 0px 120px;
+      width: 100%;
+      &:hover{
+         transition: .3s all ease;
+         box-shadow: 0px 0px 40px 10px rgba($color: #000000, $alpha: .3);
+      }
+      .example__container{
+         min-height: 675px;
+         padding: 50px 10px 50px 10px;
+         display:flex;
+         justify-content: center;
+         align-items: center;
+         .example__image{
+            img{
+               max-width: 100%;
+               height: 100%;
+            }
+            margin: 0px 100px 0px 0px;
+         }
+         .example__body{
+            max-width: 550px;
+            min-height: 465px;
+            .example__label{
+               display: flex;
+               justify-content: start;
+               align-items: center;
+               .label{
+                  margin: 0px 10px 0px 0px;
+                  max-width: 155px;
+               }
+               .example__tag {          
+               }
+            }
+            & > *:not(:last-child){
+               margin: 0px 0px 35px 0px;
+            }
+         }
+         .example__title{
+
+         }
+      
+         .example__text{
+
+         }
+      
+         .example__button{
+            button{
+               @include tplbutton (#fff, #4EA4DC);
+               padding: 15px 35px 15px 35px;
+            }
+         }
+      }
+   }
+   @media(max-width: $md1){
+      .example{
+         padding: 0px 10px 0px 10px;
+         border-radius: 70px;
+         .example__container{
+            flex-wrap: wrap;
+            padding: 50px 0px 50px 0px;
+            .example__image{
+               margin: 0px 0px 20px 0px;
+            }
+         }
+      }
+   }
+   @media(max-width:$md4){
+      .example{
+         .example__container{
+            .example__image{
+
+            }
+            .example__body{
+               .example__button{
+                  button{
+                     width: 100%;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+
