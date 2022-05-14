@@ -197,7 +197,6 @@
          .example__image{
             img{
                max-width: 100%;
-               height: 100%;
                &:hover{
                   border-radius: 15px;
                   max-width: 110%;
@@ -217,21 +216,11 @@
                   margin: 0px 10px 0px 0px;
                   max-width: 155px;
                }
-               .example__tag {          
-               }
             }
             & > *:not(:last-child){
                margin: 0px 0px 35px 0px;
             }
          }
-         .example__title{
-
-         }
-      
-         .example__text{
-
-         }
-      
          .example__button{
             button{
                @include tplbutton (#fff, #4EA4DC);
@@ -260,7 +249,13 @@
       .example{
          .example__container{
             .example__image{
-
+               img{
+                  &:hover{
+                     box-shadow: none;
+                     max-width: 100%;
+                  }
+                  
+               }
             }
             .example__body{
                .example__button{
@@ -365,7 +360,7 @@
                   max-width: 100%;
                }
             }
-            .experience__buttons {gir
+            .experience__buttons {
                button{
                   flex: 0 1 150px;
                }
@@ -382,6 +377,11 @@
       .experience__container {
          .experience__body {
             .experience__example-images {
+               img{
+                  &:hover{
+                     box-shadow: none;
+                  }
+               }
                display: none;
             }
             .experience__buttons {

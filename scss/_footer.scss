@@ -1,1 +1,112 @@
 @import "_settings.scss";
+//----------------------------------------------------------------------------------------------------------------------------------------------
+footer{
+   min-height: 409px;
+   background-color: #000;
+   .footer-part1{
+      padding: 90px 10px 40px 10px;
+      min-height: 316px;
+      width: 100%;
+      .footer-part1__body{
+         display:flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         .footer__logo{
+            max-width: 225px;
+            margin: 0px 0px 40px 0px;
+            .logo{
+               margin: 0px 0px 15px 0px;
+            }
+            .logo__text{
+            
+            }
+         }
+
+         .footer__list{
+            display: flex;
+            flex-direction: column;
+            min-width: 225px;
+            min-height: 260px;
+            .footer__item{
+               font-family: 'Lato';
+               font-weight: 400;
+               font-size: 16px;
+               line-height: 160%;
+               cursor: pointer;
+               color: rgba($color: #fff, $alpha: .6);
+               &:hover{
+                  color: rgba($color: #fff, $alpha: 1);
+                  transition: all ease-out .5s;
+               }
+               .item__icon{
+                  display: flex;
+                  align-items: center;
+                  .footer__icon{
+                     display:flex;
+                     justify-content: center;
+                     align-items: center;
+                     background-color: rgb(41, 41, 41);
+                     width: 30px;
+                     height: 30px;
+                     border-radius: 50%;
+                     i{
+                        color: #FFFFFF;
+                        font-size: 12px;
+                     }
+                     margin: 0px 13px 0px 0px;
+                  }
+                  
+                  .footer__contact{
+                     &:hover{
+                        color: rgba($color: #fff, $alpha: 1);
+                        transition: all ease-out .5s;
+                     }
+                  }
+
+               }
+               .footer__icons{
+                  padding: 0px 0px 0px 7px;
+                  .fa-brands{
+                     color: #FFFFFF;
+                     font-size: 18px;
+                  }
+                  .fa-brands:not(:last-child){
+                     margin: 0px 31px 0px 0px;
+                  }
+               }
+            } 
+         }
+         .footer__list > *:not(:last-child){
+            margin: 0px 0px 10px 0px;
+         }
+      }
+   }
+
+   .footer__seporator{
+      width: 100%;
+      height: 1px;
+      opacity: 0.2;
+      border: 1px solid #FFFFFF;
+   }
+   .footer-part2{
+      padding: 25px 10px 25px 10px;
+      min-height: 93px;
+      width: 100%;
+      .footer-part2__body{
+         display:flex;
+         justify-content:space-between;
+         align-items: center;
+         .footer__copyright{
+
+         }
+         .footer__policy{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            .policy{
+               margin: 0px 31px 0px 0px;
+            }
+         }
+      }
+   }
+}
