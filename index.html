@@ -18,10 +18,10 @@
                <div class="logo__name">Gamez</div>
                <nav class="menu__body">
                   <ul class="menu__nav">
-                     <li class="nav__item">Главная</li>
-                     <li class="nav__item">Преимущества</li>
-                     <li class="nav__item">Как это работает</li>
-                     <li class="nav__item">Скачать</li>
+                     <li class="nav__item"><a href="#" class="menu__link">Главная</a></li>
+                     <li class="nav__item"><a href="#feature" class="menu__link">Преимущества</a></li>
+                     <li class="nav__item"><a href="#hiw" class="menu__link">Как это работает</a></li>
+                     <li class="nav__item"><a href="#dload" class="menu__link">Скачать</a></li>
                   </ul>
                </nav>
                <div class="menu__button"><button class="menu__btn">Sign Up</button></div>
@@ -33,10 +33,10 @@
                </div>
                <div class="burger__menu">
                   <ul class="burger__list">
-                     <li class="list__item">Главная</li>
-                     <li class="list__item">Преимущества</li>
-                     <li class="list__item">Как это работает</li>
-                     <li class="list__item">Скачать</li>
+                     <li class="list__item"><a href="#" class="burger__href">Главная</a></li>
+                     <li class="list__item"><a href="#feature" class="burger__href">Преимущества</a></li>
+                     <li class="list__item"><a href="#hiw" class="burger__href">Как это работает</a></li>
+                     <li class="list__item"><a href="#dload" class="burger__href">Скачать</a></li>
                   </ul>
                </div>
             </div>
@@ -59,7 +59,7 @@
             </div>
          </div>
          
-         <div class="page__advantages advantages">
+         <div class="page__advantages advantages" id="feature">
             <div class="advantages__container _container _background-image2">
                <div class="advantages__body">
                   <div class="advantages__title"><h2>Contrary to popular belief, Lorem Ipsum is not simply random text</h2></div>
@@ -107,7 +107,7 @@
             </div>
          </div>
          
-         <div class="page__experience experience">
+         <div class="page__experience experience" id="hiw">
             <div class="experience__container _container">
                <div class="experience__body">
                   <div class="experience__label">
@@ -132,8 +132,8 @@
             </div>
          </div>
 
-         <div class="page__downloads downloads">
-            <div class="downloads__background" style="background: url(images/downloads_mask.png) no-repeat, url(images/reDownloads.png) no-repeat;">
+         <div class="page__downloads downloads" id="dload">
+            <div class="downloads__background" style="background: url(images/downloads_mask.png) center/cover no-repeat, url(images/reDownloads.png) center/cover no-repeat;">
                <div class="downloads__container _container">
                   <div class="downloads__image"><img src="images/phone.png" alt="нет изображения"></div>
                   <div class="downloads__body">
@@ -287,6 +287,13 @@
          
 
       </footer>
+      <div class="popup">
+         <div class="popup__wrap">
+            <div class="popup__menu">
+
+            </div>
+         </div>
+      </div>
    </div>
   
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

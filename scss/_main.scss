@@ -487,8 +487,8 @@
                      text-align: center;
                   }
 
-                  .game__amount{
-                     text-transform: capitalize;
+                  .price__amount{
+                     text-decoration: line-through;
                   }
 
                   .price__final{
@@ -526,5 +526,4 @@
          }
       }
    }
-
 }
