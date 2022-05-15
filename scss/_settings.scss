@@ -65,10 +65,12 @@ $md4: 480px;
    box-shadow: 5px 5px .7 black;
    border-radius: 5px;
    font-family: $fontFamily;
-   &:hover{
-      transition: ease .45s;
-      color: $bc;
-      background-color: $c;
+   @media (min-width: $md2){
+      &:hover{
+         transition: ease .45s;
+         color: $bc;
+         background-color: $c;
+      }
    }
 }
 //Оболочка-----------------------------------------------------------------------------------------------------------------------------
@@ -135,6 +137,7 @@ h3{
    margin: 0;
 }
 h4{
+   color: #ffffff;
    font-weight: 600;
    font-size: 16px;
    line-height: 19px;

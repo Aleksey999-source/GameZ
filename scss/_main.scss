@@ -177,6 +177,7 @@
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
+   background-attachment: fixed;
 }
 //------------------------------------------Example Section---------------------------------------------------------------------------------
    .example{
@@ -393,8 +394,137 @@
       }
    } 
 }
+//-------------------------------downloads section-----------------------------------------------------------------------------------------------------
+.downloads{
+   min-height: 675px;
+   padding: 225px 0px 0px 0px;
+   &__container{
+      padding: 100px 0px 100px 0px;
+      height: 450px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      .downloads__image{
+         margin: 0px 200px 160px 0px;
+      }
+      .downloads__body{
+         .downloads__links{
+            display: flex;
+            flex-wrap: wrap;
+            .download__link_1{
+               margin: 0px 10px 10px 0px;
+            }
+         }
+      }
+      .downloads__body > *:not(:last-child){
+         margin: 0px 0px 35px 0px;
+      }
+   }
+   @media (max-width: $md2){
+      &__container{
+         .downloads__image{
+            margin: 0px 75px 160px 0px;
+         }
+      }
+   }
+   @media (max-width: $md3){
+      &__container{
+         .downloads__image{
+            display: none;
+         }
+      }
+   }
+}
+//-------------------------------------------------------------sales-------------------------------------------------------------------------------
+.page__sales{
+   .sales__container{
+      min-height: 866px;
+      padding: 130px 10px 130px 10px;
+      .sales__title{
+         margin: 0px 0px 20px 0px;
+         text-align: center;
+      }
+      .sales__text{
+         margin: 0px 0px 60px 0px;
+         text-align: center;
+      }
+      .sales__games{
+         display:flex;
+         justify-content: center;
+         align-items: center;
+         flex-wrap: wrap;
+         gap: 20px 20px;
+         min-height: 470px;
+         .game__item{
 
+            .game__image{
+               margin: 0px 0px 30px 0px;
+               @media (min-width: $md2){
+                  &:hover{
+                     border-radius: 15px;
+                     max-width: 110%;
+                     transition: all .4s ease;
+                     box-shadow: 0px 0px 40px 10px rgba($color: #000000, $alpha: .3);
+                  }
+               }
+            }
+            .game__body{
+               .game__price{
+                  display:flex;
+                  justify-content: start;
+                  align-items: center;
+                  .price__container{
+                     width: 40px;
+                     height: 20px;
+                     background-color: #4EA4DC;
+                     color: #fff;
+                     border-radius: 3px;
+                     font-family: 'Lato';
+                     font-weight: 400;
+                     font-size: 13px;
+                     line-height: 16px;
+                     padding: 2px 0px 2px 0px; 
+                     text-align: center;
+                  }
 
+                  .game__amount{
+                     text-transform: capitalize;
+                  }
 
+                  .price__final{
+                     color: #fff;
+                  }
+               }
+            }
+         }
+         .game__item > .game__body > *:not(:last-child){
+            margin: 0px 0px 12px 0px;
+         }
 
+         .price > *:not(:last-child){
+            margin: 0px 10px 0px 0px;
+         }
+      }
+   }
+}
+//------------------------Отменяющие медиазапросы-----------------------
+@media (max-width:$md2){
+   .page{
+      .page__promo{
+         .promo__container{
+            .promo__body{
+               .promo__text{
+                  span{
+                     &:hover{
+                        transition: none;
+                        text-decoration: none;
+                        font-size: 16px;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
 
+}

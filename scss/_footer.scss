@@ -13,12 +13,9 @@ footer{
          flex-wrap: wrap;
          .footer__logo{
             max-width: 225px;
-            margin: 0px 0px 40px 0px;
+            min-height: 260px;
             .logo{
-               margin: 0px 0px 15px 0px;
-            }
-            .logo__text{
-            
+               margin: 0px 0px 20px 0px;
             }
          }
 
@@ -97,7 +94,11 @@ footer{
          justify-content:space-between;
          align-items: center;
          .footer__copyright{
-
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
          }
          .footer__policy{
             display:flex;

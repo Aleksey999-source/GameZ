@@ -1,20 +1,4 @@
 @import "_settings.scss";
-@mixin tplbutton ($c, $bc){
-   color: $c;
-   background-color: $bc;
-   font-weight: 600;
-   font-size: 16px;
-   border: none;
-   box-shadow: 5px 5px .7 black;
-   padding: 14px 30px;
-   border-radius: 5px;
-   font-family: 'Lato', sans-serif;
-   &:hover{
-      transition: ease .45s;
-      color: $bc;
-      background-color: $c;
-   }
-}
 .header {
    position: absolute;
    width: 100%;
