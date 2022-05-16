@@ -154,5 +154,15 @@ h4{
       font-size: 18px;
    }
 }
+._description--popup{
+   font-family: $fontFamily;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 150%;
+   color: rgba($color: #000, $alpha: .6);
+   @media (max-width: $md4){
+      font-size: 18px;
+   }
+}
 
 //-------------------------------------------------------------------------------------------------------------------------------------

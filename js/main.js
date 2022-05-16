@@ -38,3 +38,25 @@ $(document).ready(function(){
      return false;
    });
  });
+ //-----------------------popup menu---------------------------------------
+ let buttons = document.getElementsByTagName('button');
+ let popup = document.querySelector('.popup');
+  for (let i = 0; i < buttons.length; i++) 
+  {
+      if (buttons[i].className == "popup__form-button") continue; //Выбираем все кнопки, кроме той что используем в popup меню
+      console.log(buttons[i].className);
+      buttons[i].addEventListener('click', togglePopupMenu)
+  }
+function togglePopupMenu(){
+  popup.classList.toggle('popup--active');
+  if (popup.classList.contains('popup--active'))
+  {
+    $('body').css('overflow', 'hidden');
+  }
+}
+
+document.querySelector('.popup__close-mark').addEventListener('click', closePopupMenu)
+function closePopupMenu(){
+  document.querySelector('.popup').classList.remove('popup--active');
+  $('body').css('overflow', 'visible');
+}

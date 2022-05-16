@@ -31,9 +31,11 @@ footer{
                line-height: 160%;
                cursor: pointer;
                color: rgba($color: #fff, $alpha: .6);
-               &:hover{
-                  color: rgba($color: #fff, $alpha: 1);
-                  transition: all ease-out .5s;
+               @media (min-width: $md2) {
+                  &:hover{
+                     color: rgba($color: #fff, $alpha: 1);
+                     transition: all ease-out .5s;
+                  }
                }
                .item__icon{
                   display: flex;

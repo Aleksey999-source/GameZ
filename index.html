@@ -87,8 +87,6 @@
             </div>
          </div>
 
-         
-         
          <div class="page__example example">
             <div class="example__container _container">
                <div class="example__image"><img src="images/icons/imageExample.png" alt="нет изображения"></div>
@@ -140,8 +138,8 @@
                      <div class="downloads__title"><h2>Bringing the game to Everyone’s Life</h2></div>
                      <div class="downloads__text _description">Let’s check out some of the cool gaming for game.</div>
                      <div class="downloads__links">
-                        <div class="download__link_1"><a href="http://"><img src="images/buttonapp.png" alt="нет изображения"></a></div>
-                        <div class="download__link_2"><a href=""><img src="images/buttonGoogle.png" alt="нет изображения"></a></div>
+                        <div class="download__link_1"><a href="#"><img src="images/buttonapp.png" alt="нет изображения"></a></div>
+                        <div class="download__link_2"><a href="#"><img src="images/buttonGoogle.png" alt="нет изображения"></a></div>
                      </div>
                   </div>
                </div>
@@ -281,32 +279,39 @@
                   <div class="webdesign _description">Webdesign</div>
                </div>
             </div>
-         </div>
-         
-         
-         
-
+         </div> 
       </footer>
+
       <div class="popup">
          <div class="popup__wrap">
-            <div class="popup__form">
+            <div class="popup__close-mark">
+               <i class="fa-solid fa-xmark"></i>
+            </div>
                <div class="popup__body">
                   <div class="popup__logo">
                      <img src="images/icons/logo.svg" alt="нет логотипа">
                   </div>
                   <div class="popup__title"><h2>Оставьте заявку и мы вам ответим!</h2></div>
-                  <div class="popup__description _description">Не упусти возможность.</div>
-               </div>
-               <form action="">
+                  <div class="popup__description _description--popup">Не упусти возможность.</div>
+                  <div class="popup__form">
+                     <form action="" class="popup__form-body">
+                        <input type="text" name="userName" id="userName" class="popup__form-input" placeholder="Имя" required>
+                        <input type="text" name="userLastName" id="userLastName" class="popup__form-input" placeholder="Фамилия">
+                        <input type="tel" name="phoneNumber" id="tel" class="popup__form-input" placeholder="Номер Телефона" required>
+                        <input type="email" name="e-mail" id=email" class="popup__form-input" placeholder="Почта">
+                     </form>
+                     <button class="popup__form-button">Отправить</button>
+                  </div>
 
-               </form>
-               <div class="popup__warning warning">
-                  <div class="warning__text _description">Регистрируясь вы принимаете <span>Пользовательское соглашение.</span></div>
+               <div class="warning__text _description--popup">
+                     Регистрируясь вы принимаете <span>Пользовательское соглашение.</span>
                </div>
             </div>
          </div>
       </div>
+
    </div>
+     
   
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
    
