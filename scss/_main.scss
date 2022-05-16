@@ -248,6 +248,7 @@
    }
    @media(max-width:$md4){
       .example{
+         border-radius: 0px;
          .example__container{
             .example__image{
                img{
@@ -453,7 +454,7 @@
          justify-content: center;
          align-items: center;
          flex-wrap: wrap;
-         gap: 20px 20px;
+         gap: 40px 20px;
          min-height: 470px;
          .game__item{
 

@@ -928,6 +928,9 @@ h4 {
 }
 
 @media (max-width: 480px) {
+  .example {
+    border-radius: 0px;
+  }
   .example .example__container .example__image img:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -1208,7 +1211,7 @@ h4 {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 20px 20px;
+  gap: 40px 20px;
   min-height: 470px;
 }
 
