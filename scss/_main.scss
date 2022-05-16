@@ -66,6 +66,9 @@
    background-repeat: no-repeat;
    background-size: cover;
    background-position: 80% 50%;
+   @media (max-width: $md4) {
+      background-position: 80% 60%;
+   }
 }
 @media (max-width:$md3){
    ._background-image:after {
