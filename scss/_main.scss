@@ -460,15 +460,19 @@
          gap: 40px 20px;
          min-height: 470px;
          .game__item{
-
             .game__image{
                margin: 0px 0px 30px 0px;
                @media (min-width: $md2){
-                  &:hover{
-                     border-radius: 15px;
-                     max-width: 110%;
-                     transition: all .4s ease;
-                     box-shadow: 0px 0px 40px 10px rgba($color: #000000, $alpha: .3);
+                  img{
+                     &:hover{
+                        border-radius: 15px;
+                        transition: all 1s ease;
+                        box-shadow: 0px 0px 40px 10px rgba($color: #000000, $alpha: .3);
+                        width: 130%;
+                        position: relative;
+                        margin: 0px 10px 0px 0px;
+                        z-index: 11;  
+                     }
                   }
                }
             }
