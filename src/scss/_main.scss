@@ -1,4 +1,4 @@
-@import "_settings.scss";
+@import "_settings";
 .page{
    &__promo {
       .promo__container{
@@ -62,10 +62,6 @@
 }
 
 ._background-image{
-   background: url("../images/hero_area_image.png"), url("../images/background2.png"), url("../images/background.png");
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: 80% 50%;
    @media (max-width: $md4) {
       background-position: 80% 60%;
    }
@@ -174,13 +170,6 @@
    }
 }
 
-._background-image2{
-   background: url("../images/background3.png");
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-   background-attachment: fixed;
-}
 //------------------------------------------Example Section---------------------------------------------------------------------------------
    .example{
       border-radius: 0px 401px 401px 345.5px;
@@ -199,10 +188,11 @@
          align-items: center;
          .example__image{
             img{
-               max-width: 100%;
+               max-height: 500px;
+               max-width: 500px;
                &:hover{
                   border-radius: 15px;
-                  max-width: 110%;
+                  transform: scale(1.1);
                   transition: all .4s ease;
                }
             }
@@ -341,7 +331,7 @@
             max-width: 100%;
             &:hover{
                border-radius: 15px;
-               max-width: 110%;
+               transform: scale(1.1);
                transition: all .4s ease;
                box-shadow: 0px 0px 40px 10px rgba($color: #000000, $alpha: .3);
             }
@@ -466,12 +456,9 @@
                   img{
                      &:hover{
                         border-radius: 15px;
-                        transition: all 1s ease;
+                        transition: all .6s ease;
                         box-shadow: 0px 0px 40px 10px rgba($color: #000000, $alpha: .3);
-                        width: 130%;
-                        position: relative;
-                        margin: 0px 10px 0px 0px;
-                        z-index: 11;  
+                        transform: scale(1.1);
                      }
                   }
                }
