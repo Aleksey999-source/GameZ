@@ -12,6 +12,7 @@ function toggleBurgerClass()
    {
        document.body.style.overflow = "hidden";
    }
+   
    else
    {
        document.body.style.overflow = "visible"; 
@@ -44,7 +45,6 @@ $(document).ready(function(){
   for (let i = 0; i < buttons.length; i++) 
   {
       if (buttons[i].className == "popup__form-button") continue; //Выбираем все кнопки, кроме той что используем в popup меню
-      console.log(buttons[i].className);
       buttons[i].addEventListener('click', togglePopupMenu)
   }
 function togglePopupMenu(){

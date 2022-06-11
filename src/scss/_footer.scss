@@ -1,6 +1,10 @@
 @import "_settings.scss";
 //----------------------------------------------------------------------------------------------------------------------------------------------
 footer{
+   background-image: url('../images/background_footer.png');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
    min-height: 409px;
    background-color: #000;
    .footer-part1{
@@ -88,9 +92,7 @@ footer{
       border: 1px solid #FFFFFF;
    }
    .footer-part2{
-      padding: 25px 10px 25px 10px;
-      min-height: 93px;
-      width: 100%;
+      padding: 25px 0px 40px 0px;
       .footer-part2__body{
          display:flex;
          justify-content:space-between;
